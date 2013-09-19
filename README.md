@@ -1,4 +1,7 @@
 ss-spa-example
 ==============
 
-Single Page App example with Server-Side rendered view fragments.
+An example application demonstrating how to build Single Page Applications with
+server-side rendered view fragments. 
+
+This example uses Spring MVC, Foundation, and jQuery.
