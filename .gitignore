@@ -4,3 +4,49 @@
 *.jar
 *.war
 *.ear
+
+#Android generated
+bin
+gen
+
+#Eclipse
+.project
+.classpath
+.settings
+
+#IntelliJ IDEA
+.idea
+*.iml
+
+#Sublime Text
+*.sublime*
+
+#Maven
+target
+release.properties
+pom.xml.*
+
+#Backup Files
+*~
+
+#Android
+.gradle
+signing.gradle
+
+#build folder
+build
+.gradle
+
+#out folder
+out
+
+#misc
+.mymetadata
+classes
+CVS
+target
+generated
+.cvsignore
+out
+.DS_Store
+*.log
