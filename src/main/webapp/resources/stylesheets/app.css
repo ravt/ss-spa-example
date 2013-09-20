@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+#todoList ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+#todoList .done-false {
+  border-bottom: 1px solid #ccc;
+}
+
+#todoList .done-true {
+  border-bottom: 1px solid #ccc;
+  text-decoration: line-through;
+}
+
+#todoList .deleteTodo {
+  float: right;
+}
+
+#todoList li {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+  font-size: 1.2em;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;  
+}
+
+#todoList li:hover {
+  font-size: 1.2em;
+  background: #f6f6f6;  
+}

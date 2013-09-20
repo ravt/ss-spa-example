@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+
+	<appender name="APPLICATION_LOG" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="application.log" />
+		<param name="Threshold" value="ALL" />
+		<param name="MaxBackupIndex" value="5" />
+		<param name="MaxFileSize" value="10MB" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %l%n %-5p : %m%n" /> <!-- 2 lines -->
+		</layout>
+	</appender>
+	
+	<appender name="CONSOLE_LOG" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %c - %m%n" />
+		</layout>
+	</appender>
+	
+	<logger name="org.springframework.info">
+		<level value="info" />
+	</logger>
+	
+	<logger name="org.springframework">
+		<level value="debug" />
+	</logger>	
+		
+	<logger name="com.ravport">
+		<level value="debug" />
+	</logger>
+	
+	<logger name="Hibernate">
+		<level value="off" />
+	</logger>
+
+	<root>
+		<level value="ERROR" />
+		<!-- <appender-ref ref="APPLICATION_LOG" /> -->
+		<appender-ref ref="CONSOLE_LOG" />
+	</root>
+
+</log4j:configuration>
